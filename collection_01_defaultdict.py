@@ -15,3 +15,12 @@ print(items)
 print(d)
 print(x)
 
+
+# This is the default factory example
+d_default_factory: defaultdict[str, str] = defaultdict(lambda: '<missing>')
+d_default_factory['a'] = 'Apple'
+d_default_factory['b'] = 'Banana'
+
+print(d_default_factory)
+print(d_default_factory['a'])
+print(d_default_factory['no_such_key'])
